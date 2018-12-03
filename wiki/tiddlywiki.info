@@ -9,8 +9,8 @@
         "tiddlywiki/markdown",
         "tiddlywiki/katex",
         "tiddlywiki/railroad",
-        "felixhayashi/tiddlymap",
         "felixhayashi/vis",
+        "felixhayashi/tiddlymap",
         "felixhayashi/hotzone",
         "felixhayashi/topstoryview"
 
