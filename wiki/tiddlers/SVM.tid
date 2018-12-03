@@ -1,0 +1,10 @@
+created: 20180707080619793
+creator: user
+modified: 20181102085242856
+modifier: user
+tags: supervised
+title: SVM
+tmap.edges: {"997c8d62-493b-41d2-a763-9c028daefe52":{"to":"4b897cf8-3e0a-48f5-922f-6ead53bd3c73","type":"inc"},"8974fcb1-c255-4119-8bae-1cb0ba35468b":{"to":"4242d591-4a0c-4fa3-9fa4-ded22529e0f2","type":"inc"},"0c805fd6-0fd6-42f7-bced-e3d30d71ba38":{"to":"b351256f-9b6c-4a1f-baa8-019726eea3a9","type":"inc"},"10763a16-e84f-4a7e-80fa-c7fa1b0cdba1":{"to":"7c290ed1-7d05-410b-a549-04fd9cc0137a","type":"inc"}}
+tmap.id: b4f64ee7-0ab1-47d8-b7ef-134ef5080b5b
+type: text/vnd.tiddlywiki
+

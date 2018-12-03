@@ -1,0 +1,9 @@
+created: 20180707081416508
+creator: user
+modified: 20180707094234466
+modifier: user
+title: RNN
+tmap.edges: {"e0a0d5e9-3f44-41a7-8891-6bb20996d6c8":{"to":"a9bc2860-f5f9-4dc9-81aa-99b611f733e8","type":"inc"},"e41ffa40-3e69-4fd6-88a3-b721e8e31c96":{"to":"9c99b850-1d59-457b-8958-6f87dd36d03d","type":"inc"},"958d523a-181c-4d66-8310-334efbd47a38":{"to":"f00e21e9-6c36-498d-b49a-3858d964bc39","type":"inc"},"b4c0a325-e123-4fe8-b2b3-673316386f6e":{"to":"dca190ac-62b0-49d1-a1d6-57472cbacea9","type":"inc"},"74f314f9-51f0-4066-b518-8bbd38c209fb":{"to":"965df502-3ced-4f80-a148-70a703a27601","type":"inc"},"f5138cf5-7c26-47df-9f7b-f91824dcdcb4":{"to":"2e9abf2a-7795-40c6-a4ee-0e0cd7c4b9fd","type":"inc"},"01b1cc4e-e151-463e-b009-73e02f2fbc05":{"to":"9a201afb-e77c-42ff-8657-0f875001e587","type":"inc"},"6ef8d2c9-0169-49f5-ab24-2047338802f2":{"to":"415bc65d-2052-49c5-808f-6731cd1640e4","type":"inc"}}
+tmap.id: 14da4913-c133-4ee8-b48c-6922332b1d55
+type: text/vnd.tiddlywiki
+

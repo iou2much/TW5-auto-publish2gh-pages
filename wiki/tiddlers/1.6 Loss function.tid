@@ -1,0 +1,22 @@
+created: 20180707073058574
+creator: user
+list: 
+modified: 20181102084311346
+modifier: user
+tags: [[1. General]]
+title: 1.6 Loss function
+tmap.edges: {"e3db1d39-93d8-4a9e-9cc4-bfc4e0d9f5e7":{"to":"5257e8ff-cbd7-46da-b29f-276e46c83e9a","type":"inc"}}
+tmap.id: 56c56c4b-3308-40f4-8979-7f9a5c70e50c
+type: text/vnd.tiddlywiki
+
+[[quadratic function]]
+
+[[cross-entropy]]
+
+[[log-likelihood]]
+
+用sigmoid二分类时，为什么以cross-entropy比二次函数作为loss function更加合理？
+
+因为二次函数的w b 导数与sigmoid成正比，调整参数不合理 （深度学习框架Tensorflow学习与应用--练数成金，第四周）
+
+[[第四周.pdf]]

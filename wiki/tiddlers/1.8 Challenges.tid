@@ -1,0 +1,40 @@
+created: 20180707074534569
+creator: user
+list: 
+modified: 20181010073807162
+modifier: user
+tags: [[1. General]]
+title: 1.8 Challenges
+tmap.edges: {"137dfbda-312e-4683-8823-b7d70ba3f616":{"to":"48c5b2d6-a4fc-4e77-8b95-a6a21420c747","type":"inc"},"76119be5-3c23-4d5b-852a-605a52ec28eb":{"to":"ac670884-8b22-446d-9690-bf5ba2a3af59","type":"inc"},"f17ebfe4-a35f-486b-91cb-d0f5ae06be61":{"to":"84055412-74c0-41ed-bfcb-d835b180a7ad","type":"inc"}}
+tmap.id: d2da8fd4-8d4f-4a63-a4e9-6660dac90cef
+type: text/vnd.tiddlywiki
+
+Overfitting
+
+Underfitting
+
+不平衡数据
+
+> 欠采样
+
+> 过采样
+
+语境相关
+
+概念漂移
+
+特征缺失
+
+特征冗余（过滤法vs 包装法)
+
+数据缺乏规律性
+
+多标签域
+
+Ref.
+
+<<<
+
+《机器学习导论》Chap.10 Kubat
+
+<<<

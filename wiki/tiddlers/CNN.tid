@@ -1,0 +1,9 @@
+created: 20180707081423485
+creator: user
+modified: 20180707094609289
+modifier: user
+title: CNN
+tmap.edges: {"35889313-eb6d-47a1-9a3a-0064666de0e4":{"to":"e25f9802-b8fe-4ec4-a440-5e4bc94d4f3b","type":"inc"},"13041985-bcde-482c-b9ef-93ce042343de":{"to":"78737baa-e154-49d6-a963-b43ca9b2802c","type":"inc"},"48ae2cc0-6128-4fc4-b5eb-beb9c441b015":{"to":"0e112f36-da24-496a-87a2-0672adb06cc0","type":"inc"},"9033ed26-9c83-479b-ad46-71e729e504c9":{"to":"1b7ba558-254e-400a-8c04-6ababa093828","type":"inc"},"4ec15abf-4d38-46b7-a2e7-c88d8eebadfe":{"to":"dc2b167a-174d-47f2-b12c-afc0123a5028","type":"inc"},"9e9e2862-21bc-47ba-9607-8d79936d61ed":{"to":"826f3d3f-f521-4e23-8746-f5d2a7c33f4a","type":"inc"}}
+tmap.id: e4fc9085-7273-4c91-b038-1ade298452b9
+type: text/vnd.tiddlywiki
+

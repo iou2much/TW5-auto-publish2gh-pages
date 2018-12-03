@@ -1,0 +1,79 @@
+created: 20180714082353855
+creator: user
+list: 
+modified: 20181102125658174
+modifier: user
+tags: [[1.1-Computational learning theory]] todo
+title: 1.1.1 假设空间与版本空间
+tmap.id: a5c0ed5a-73d7-453a-b6bc-b870f24e634c
+type: text/vnd.tiddlywiki
+
+!!! ''TL;DR''
+
+> 对目标函数提出可能假设的集合称为''假设空间''，在假设空间中，与观察到的数据一致的子集为''版本空间''
+
+!!! ''prerequisite''
+
+[[类]]
+
+
+
+本文讨论基于以下几点前提：
+
+* 监督学习问题
+* 属性为离散数据, 且在有限类中取值
+* 二分类问题
+
+
+''有限类''
+
+> 属性取值为有限集合
+
+''假设空间''
+
+> 学习器的输出，学习器通过训练数据得出一系列假设(hypothesis), $$ h_1 , h_2 , h_3 \in \mathcal{H} $$, 以逼近目标函数。
+> 假设空间通常以$$ \mathcal{H} $$表示为假设的集合。
+
+假设空间规模计算:(可理解为集合的势)
+
+假设有以下数据，4个属性，每个属性取值, $$ \mathcal{x_n \in \{0,1\}} $$
+
+| x1 | x2 | x3 | x4 | y |
+| 0  | 0  | 0  | 1 | 0 |
+| 0  | 1  | 0  | 1 | 0 |
+| 1  | 1  | 0  | 0 | 1 |
+| 0  | 0  | 1  | 0 | 1 |
+
+输入空间为 $$ 2^4 $$
+
+假设空间为 $$ 2^{2^4} = 65536 $$
+
+if we have the given image above we can then figure it out the following way.
+
+Count the number of attributes or features. In this case, we have four features or (4).
+Analyze or if given what are the values corresponding to each feature (e.g. binary, or many different inputs). In this particular case, we have binary values (0/1).
+
+Hence, 2^4 = 16. 
+So for each of the 2^4 attributes, the outputs can take 0 or 1.
+
+Therefore, 2^(2^4) = 65536 ways. 
+
+
+!!! Ref.
+
+<<<
+https://www.quora.com/What-is-hypothesis-in-machine-learning
+
+https://www.cnblogs.com/HongjianChen/p/8383816.html
+
+[[What exactly is a hypothesis space in the context of Machine Learning?|https://stats.stackexchange.com/questions/183989/what-exactly-is-a-hypothesis-space-in-the-context-of-machine-learning]]
+
+[[What does the hypothesis space mean in Machine Learning?|https://www.quora.com/What-does-the-hypothesis-space-mean-in-Machine-Learning]]
+
+http://www.ccs.neu.edu/home/rjw/csg220/lectures/intro.pdf
+
+[[What is an 'input space' and why does the fraction of the input space covered by the training set matter?|https://stats.stackexchange.com/questions/226369/what-is-an-input-space-and-why-does-the-fraction-of-the-input-space-covered-by]]
+
+https://stats.stackexchange.com/questions/319311/are-the-terms-hypothesis-space-and-parameter-space-interchangeable
+
+<<<

@@ -1,0 +1,9 @@
+created: 20180707094345783
+creator: user
+modified: 20180707094450650
+modifier: user
+title: Classic networks
+tmap.edges: {"1d5cad2d-9fe0-4302-8278-ef0b15894959":{"to":"bcda23a5-e4c2-4c1c-8a52-beab6fd42bf9","type":"inc"},"2040d4d0-4e38-45c6-a298-592e3bf5b25c":{"to":"a91bc65f-bb98-42fc-a8ea-dab8bd3c02ed","type":"inc"},"b6b281f1-79bc-4639-a711-fb2a55e2dceb":{"to":"edf76941-fcc4-4faa-9759-ee38b65183b3","type":"inc"}}
+tmap.id: 78737baa-e154-49d6-a963-b43ca9b2802c
+type: text/vnd.tiddlywiki
+

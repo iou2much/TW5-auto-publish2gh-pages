@@ -1,0 +1,39 @@
+created: 20180707073901250
+creator: user
+list: 
+modified: 20181102132456118
+modifier: user
+tags: [[1. General]]
+title: 1.2 Model selection
+tmap.edges: {"e87c2857-f0a0-4dac-9dce-bc38a798308e":{"to":"929385b9-5905-483d-9327-da01bb8c7169","type":"inc"},"277fe4b5-b7d3-4e3f-aefc-2928667eea1e":{"to":"f8cc3201-245e-4da7-89ae-2514fed10a5c","type":"inc"}}
+tmap.id: c189fdcd-7d73-477c-bcc2-a6bfe3cb6b58
+type: text/vnd.tiddlywiki
+
+<<list-links "[tag[Model selection]]">>
+
+要选择模型，首先要量化一个模型的性能如何。
+
+! 模型评估
+
+* 偏差与方差
+** 交叉验证
+*** holdout method
+*** K-fold
+* 
+
+! 指标是否可信
+
+置信区间
+
+
+Ref.
+
+<<<
+
+《数据挖掘导论》Chap. 4 – Pang-Ning Tan
+
+http://sklearn.apachecn.org/cn/0.19.0/modules/classes.html#module-sklearn.model_selection
+
+http://sklearn.apachecn.org/cn/0.19.0/modules/model_evaluation.html
+
+<<<

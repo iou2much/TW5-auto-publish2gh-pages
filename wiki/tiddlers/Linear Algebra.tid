@@ -1,0 +1,40 @@
+created: 20180713084616117
+creator: user
+modified: 20180726154955036
+modifier: user
+tags: Mathematics
+title: Linear Algebra
+tmap.id: 0cd889c1-9f6a-4ef0-a271-bc51eb609e24
+type: text/vnd.tiddlywiki
+
+需要理解线性代数以下知识点：
+
+[[矩阵乘法]]
+
+[[单位矩阵与逆矩阵]]
+
+[[范数]]
+
+[[特征分解]]
+
+[[Moore-Penrose伪逆]]
+
+[[迹运算]]
+
+[[行列式]]
+
+[[本征向量和本征值]]
+
+[[奇异值分解]]
+
+[[线性可分性]]
+
+[[非线性变换]]
+
+[[PCA]]
+
+Ref.
+
+<<<
+http://wordsandbuttons.online/programmers_introduction_to_linear_equations.html
+<<<

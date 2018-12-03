@@ -1,0 +1,14 @@
+config.neighbourhood_directions: in
+config.neighbourhood_scope: 
+config.physics_mode: false
+config.raster: 
+config.show_inter_neighbour_edges: true
+created: 20180706170902566
+creator: user
+id: 9010adba-38fd-49cb-8ed5-707de9b45ac8
+isview: true
+modified: 20180707074200768
+modifier: user
+title: $:/plugins/felixhayashi/tiddlymap/graph/views/Machine Learning
+type: text/vnd.tiddlywiki
+

@@ -1,0 +1,42 @@
+created: 20180707073451876
+creator: user
+list: 
+modified: 20181102132456099
+modifier: user
+tags: [[1.2 Model selection]]
+title: Metrics
+tmap.edges: {"5bff489c-0d30-4689-b028-994178c7a2bb":{"to":"67c23ba7-5695-4979-9504-1e57807d437c","type":"inc"},"9eae4cfa-fefa-420c-8d22-4d81a26fc17b":{"to":"43e95970-1d48-408b-9b09-937cbd24332d","type":"inc"},"962caa44-1fe5-4c40-916b-46cc6cd1d2ff":{"to":"359d0e50-7902-45eb-b7ce-031cdb6648b0","type":"inc"}}
+tmap.id: f8cc3201-245e-4da7-89ae-2514fed10a5c
+type: text/vnd.tiddlywiki
+
+! 分类问题
+
+混淆矩阵
+
+Precision
+
+Recall
+
+F1
+
+ROC
+
+AUC
+
+
+! 回归问题
+
+MSE
+
+OLS
+
+R平方值
+
+
+
+<<<
+https://blog.csdn.net/howhigh/article/details/73928629
+
+《机器学习导论》Chap.11 Kubat
+
+<<<

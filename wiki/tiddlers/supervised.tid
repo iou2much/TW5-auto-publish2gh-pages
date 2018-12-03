@@ -1,0 +1,12 @@
+created: 20180707074835387
+creator: user
+list: 
+modified: 20181102084949296
+modifier: user
+tags: [[2. Classic Algorithm]]
+title: supervised
+tmap.edges: {"57cd16a3-c4df-4ae3-8e57-77cf9f8cd725":{"to":"2b6d6393-cf4c-4282-801d-966949b60b25","type":"inc"},"3e174337-de33-4df3-8e5d-150603f23c01":{"to":"3593d824-d3cc-4a54-9d71-d677c8c46059","type":"inc"},"e4c2cefe-3749-4fe9-970b-7e40c07b340e":{"to":"bf775f4e-e5b5-4fa5-93f9-2dda40c9e9b5","type":"inc"},"b5dd12ed-0d20-4be0-96d0-9c6c81e2538c":{"to":"a0163f9b-22cb-436a-bb8e-3cf1a38e66f3","type":"inc"},"4a6a768f-5806-41ae-9428-3b9cd6378e39":{"to":"98fa2cbc-54be-4b35-b5d3-3ecd61fd3d69","type":"inc"},"713447b7-904f-4702-becc-1949ad99063c":{"to":"b4f64ee7-0ab1-47d8-b7ef-134ef5080b5b","type":"inc"}}
+tmap.id: a8431c9f-d16d-4bd6-970e-224de1389041
+type: text/vnd.tiddlywiki
+
+<<list-links "[tag[supervised]]">>

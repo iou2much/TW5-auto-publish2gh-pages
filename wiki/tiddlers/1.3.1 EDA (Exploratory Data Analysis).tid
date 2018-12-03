@@ -1,0 +1,35 @@
+created: 20180717075903029
+creator: user
+list: 
+modified: 20181102132447332
+modifier: user
+tags: [[1.3 Data-preprocess]]
+title: 1.3.1 EDA (Exploratory Data Analysis)
+tmap.id: f484c9b5-65dc-4afb-a283-596ccb3c6049
+type: text/vnd.tiddlywiki
+
+Exploratory Data Analysis
+
+探索性数据分析
+
+# 假设检验与探索性数据分析
+
+# 了解数据集
+# 探索分类变量
+# 探索数值变量
+# 探索多元关系
+# 选择感兴趣的数据子集作进一步研究
+# 使用EDA发现异常字段
+# 基于预测值分级
+# 派生新变量：标志变量
+# 派生新变量：数值变量
+# 使用EDA探测相关联的预测
+
+Ref.
+
+<<<
+
+《数据挖掘与预测分析》Chap 3 -- Daniel
+
+
+<<<

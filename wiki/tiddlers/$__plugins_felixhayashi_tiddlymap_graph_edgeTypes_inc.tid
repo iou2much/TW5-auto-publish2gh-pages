@@ -1,0 +1,8 @@
+created: 20180707072124853
+modified: 20180707073843291
+modifier: user
+show-label: false
+style: {"smooth":{"type":"cubicBezier","roundness":0.7},"arrows":{"to":{"scaleFactor":0.3}}}
+title: $:/plugins/felixhayashi/tiddlymap/graph/edgeTypes/inc
+type: text/vnd.tiddlywiki
+

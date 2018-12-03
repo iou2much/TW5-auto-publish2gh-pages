@@ -1,0 +1,107 @@
+created: 20180929083823306
+creator: user
+modified: 20181025064103937
+modifier: user
+tags: [[Machine Learning]]
+title: 0. Preface -- 人工智能的觉醒
+tmap.id: 149f05de-e66a-4010-9959-8af363c058b1
+type: text/vnd.tiddlywiki
+
+人工智能的觉醒, 还遥遥无期呢.
+
+为什么一开始就下这个结论呢, 不吹不黑, 以下我尽量中立地表达我的理解. 最近各大小媒体和厂长都对这个概念有自己的看法, 例如这几篇报道里:
+
+
+<<<
+[[马化腾和李彦宏面前，马云借人工智能又装了大X！|http://www.sohu.com/a/131667358_115978]]
+
+[[李开复：十年后50%工作将被人工智能取代|http://www.ebrun.com/20170410/225459.shtml]]
+
+[[周鸿祎：人工智能很“弱智” 机器人取代人类想太多|http://tech.huanqiu.com/per/2017-04/10465173.html]]
+
+<<<
+
+各位大佬关于AI的观点中,  我认为李开复先生的言论是最为中肯, 贴近现状和未来的, 毕竟80年代就是做语音识别出身的.  而马先生说"机器应该做人类做不到的事情", 这点无可厚非,但也应该做人类做得不够好的事,  AlphaGo背后有它厉害的算法, 说没.而红衣教主则低估了AI, 在一部分岗位上机器代替人类是势在必行的.
+
+那为什么有这样的理解呢? 首先,我们要确定一下我们在讨论的对象是什么?
+
+读者看到本文标题中"人工智能"和"觉醒"出现在同一语境时, 通常联想到的是"强人工智能".
+
+
+
+<<<
+强人工智慧（Strong AI或者 Artificial General Intelligence）是具备与人类同等智慧、或超越人类的人工智慧，能表现正常人类所具有的所有智能行为。
+----强人工智慧 | Wiki
+<<<
+
+在此且不详细讨论为什么说强人工智能的实现是遥遥无期(更多讨论见 如何看待人工智能领域的很多专家认为「人工智能将对人类存亡造成威胁」的观点？/ 强人工智能目前发展怎样，有希望实现吗？), 且说大多数媒体的危言耸听, 以及公众所理解的"人工智能", 和业界所说的"人工智能"根本不是同一回事.
+
+业界通常说的"人工智能"是"弱人工智能", 是无意识无情感, 只为解决某特定问题的一系列程序, 与"强人工智能"的通用性有很大不同.
+
+
+<<<
+Weak AI (also known as narrow AI)[1][2][3] is non-sentient artificial intelligence that is focused on one narrow task. Weak AI is defined in contrast to either strong AI (a machine with consciousness, sentience and mind) or artificial general intelligence (a machine with the ability to apply intelligence to any problem, rather than just one specific problem). All currently existing systems considered artificial intelligence of any sort are weak AI at most.
+----Weak AI | Wiki
+<<<
+
+
+当然, 这里说的"弱", 只是相对Strong AI而言, 但是也足以让人把它誉为第四次工业革命的关键技术(《第四次工业革命》 (豆瓣)).
+怎样加入到这第四次工业革命呢, 经过几年炒作, 大数据与AI概念大火大热, 各种专项培训班,相关垂直媒体一个接一个出现, 导致很多码农也往这圈子里跳了(包括我..), 无奈水太深, 这个坑的深度和广度都相对传统编程知识大不少, 特别像是我这种自学的很容易找不着北.
+不过, 慢慢地, 我倒是在自学过程中摸索出了一套学习思维框架, 以自顶向下的思维去接触这些概念:
+
+<<<
+将复杂的大问题分解为相对简单的小问题，找出每个问题的关键、重点所在，然后用精确的思维定性、定量地去描述问题。其核心本质是"分解"。
+---- 自顶向下 | 百科
+<<<
+
+
+<<<
+A top-down approach (also known as stepwise design and in some cases used as a synonym of decomposition) is essentially the breaking down of a system to gain insight into its compositional sub-systems in a reverse engineering fashion. In a top-down approach an overview of the system is formulated, specifying, but not detailing, any first-level subsystems. Each subsystem is then refined in yet greater detail, sometimes in many additional subsystem levels, until the entire specification is reduced to base elements. A top-down model is often specified with the assistance of "black boxes", which makes it easier to manipulate. However, black boxes may fail to clarify elementary mechanisms or be detailed enough to realistically validate the model. Top down approach starts with the big picture. It breaks down from there into smaller segments.[1]
+---- Top-down Approach | Wiki 
+<<<
+
+这两个解说, 我更偏向于wiki的"breaking down of a system to gain insight into its compositional sub-systems in a reverse engineering fashion", 把应用层系统打散, 把知识点分成一个个子模块去认知, 而不是像大多数书本那样, 以自下向上的方式组织知识, 从线性代数到概率再到一个个统计模型, 对于以应用为目的的工程师们来说,这个学习曲线的太长太陡而且过于零散了.
+
+具体的Top-down思路是:
+
+* 要解决的是什么问题? ( 问题背景, 历史, 解决方案的演进 )
+* 这个方案/工具有什么用? 
+* 解决过程中出现什么现象? ( Positive / Negative )
+* 出现什么现象时需要应用它?
+* 不应用它会有什么效果?
+* 应用它会有什么效果?
+* 为什么有这个作用?
+* 各个参数的影响是怎样?
+* 这个工具的本质是什么? 算法推导过程是怎样? 
+
+
+这套框架的核心是, 在学每个概念/模型/算法的时候, 都必须明白自己是为什么而学的, 从上层应用到算法推导, 每一个知识点都可以套用这个框架中的某一环, 这样就对整个AI的知识体系有了大局观.
+
+说到上层应用, 那我们首先看看, 目前以及可以预见的未来里, AI能解决什么问题.
+
+* 互联网
+* 商业
+* 健康/医疗/残障
+* 教育
+* 家庭生活
+* 公共服务
+* 交通
+* 法律
+* 物流
+* 金融/保险
+* 政务
+* 安全
+* 环境
+* 娱乐
+* 人际关系/社交
+* 心理
+
+
+
+数据、信息、知识和价值的关系
+数据，信息，知识，智慧分析与对比
+
+
+个性化/自动化/跨时空化/全局最优化
+
+人工智能是什么, 不是什么, 媒体人工智能, 强人工智能

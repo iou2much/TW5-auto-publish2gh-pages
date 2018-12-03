@@ -1,0 +1,18 @@
+created: 20181102084558879
+creator: user
+modified: 20181102084655361
+modifier: user
+tags: [[3. Deep Learning]]
+title: Optimizer
+tmap.id: 14c91cf3-03e3-426d-8a4c-3260ec7c5800
+type: text/vnd.tiddlywiki
+
+* tf.train.GradientDescentOptimizer 
+* tf.train.AdadeltaOptimizer 
+* tf.train.AdagradOptimizer 
+* tf.train.AdagradDAOptimizer 
+* tf.train.MomentumOptimizer 
+* tf.train.AdamOptimizer 
+* tf.train.FtrlOptimizer 
+* tf.train.ProximalGradientDescentOptimizer tf.train.ProximalAdagradOptimizer 
+* tf.train.RMSPropOptimizer

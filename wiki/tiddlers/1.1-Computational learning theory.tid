@@ -1,0 +1,73 @@
+created: 20180713121903303
+creator: user
+list: 
+modified: 20181102125658179
+modifier: user
+tags: [[1. General]] todo
+title: 1.1-Computational learning theory
+tmap.edges: {"7b9faeb5-43d4-451e-983a-1d803f459305":{"to":"f6793e07-a926-40f4-94e8-1e0e3abb5578","type":"inc"},"af12cef4-c66e-4fca-bcc3-9106b7930870":{"to":"cf14bfcd-d5c8-428f-a1db-866785885cc0","type":"inc"}}
+tmap.id: 2343252f-84eb-4aaa-a5a2-d12d219efd69
+type: text/vnd.tiddlywiki
+
+! 计算学习理论
+
+计算学习理论从根本上说明了以下几个问题:
+
+* 定义了学习问题，从根本上解释一个问题能否被解决
+* 量化了一个问题的复杂程度
+* 对同一问题，不同算法的为什么表现不同
+
+!!! ''基本术语''
+
+先通过一张图了解一般的机器学习流程：
+
+[img[hypothesis.png]]
+
+''实际分布$$ \mathcal{D} $$ (Distributions)''
+
+> 数据的实际分布，可理解为全部数据(包括未观察到的)的集合
+
+''目标函数(Unknown target function)''
+
+> 通常以 $$ \mathcal{f: X \to Y} $$ 表示产生实际分布的函数，对学习器来说是未知的
+
+''数据样本''
+
+> 学习器的输入
+
+''学习器(Learner)''
+
+> 当前语境下是机器学习算法，对输入数据进行学习，并输出一系列假设去逼近目标函数
+
+''[[假设空间与版本空间]]''
+
+在了解以上基本概念后，主要需要理解以下两大概念：
+
+''[[PAC]]''
+
+''[[VC维]]''
+
+''Rademacher''
+
+''稳定性''
+
+
+Ref.
+
+<<<
+https://machinelearningmastery.com/basic-concepts-in-machine-learning/
+
+《机器学习》Chap.12 --周志华
+
+《深入理解机器学习--从原理到算法》-- Shai Shalev
+
+https://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/
+
+[[《机器学习基石》笔记|http://beader.me/mlnotebook/section2]]
+
+https://blog.csdn.net/sun7_she/article/details/51163128
+
+[[Lesson 8, Udacity. ud262|https://classroom.udacity.com/courses/ud262/lessons/383498973/concepts/3972686820923]]
+
+<<<
+

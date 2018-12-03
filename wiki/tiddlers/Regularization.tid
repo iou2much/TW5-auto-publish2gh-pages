@@ -1,0 +1,15 @@
+created: 20180707081508358
+creator: user
+modified: 20181025121647484
+modifier: user
+tags: [[3. Deep Learning]]
+title: Regularization
+tmap.edges: {"7476e02d-380c-4155-a6b9-23c96804e88b":{"to":"a5b22d79-7c50-4a2b-89e1-72abd3a1d4c0","type":"inc"},"bb2ec10a-1d88-4c74-b1dd-0f8b1504822a":{"to":"ad167147-bf79-40c3-a0a1-f4f488f97ab0","type":"inc"},"944380d2-7b18-44eb-bd44-c84343513055":{"to":"407cc941-740d-4508-b0f5-1ce658538ed0","type":"inc"},"be285fb0-1058-4977-a9b0-4e50b1ea53c0":{"to":"83885965-7925-4a24-be94-427e6d0331f3","type":"inc"}}
+tmap.id: bfcf03f0-e167-4dee-844e-bf650a03c350
+type: text/vnd.tiddlywiki
+
+* L1
+* L2
+* Max norm constraints
+* dropout
+* inverted dropout
