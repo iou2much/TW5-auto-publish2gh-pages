@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.17" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>1.1-Computational learning theory: Notes of Machine Learning — to organize myself a systematic knowledge graph of ML</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river">
+
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-1.%20General tc-tagged-todo " data-tags="[[1. General]] todo" data-tiddler-title="1.1-Computational learning theory"><div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
+</span>
+
+<span>
+
+<span class="tc-tiddler-title-icon" style="fill:;">
+
+</span>
+
+
+
+<h2 class="tc-title">
+1.1-Computational learning theory
+</h2>
+
+</span>
+
+</div>
+
+<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
+</div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="user.html">
+user
+</a> 2nd November 2018 at 8:56pm
+</div>
+</div>
+<div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ 1. General
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+<span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ todo
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+</div>
+</div>
+<div class="tc-tiddler-body tc-reveal"><h1 class="">计算学习理论</h1><p>计算学习理论从根本上说明了以下几个问题:</p><ul><li>定义了学习问题，从根本上解释一个问题能否被解决</li><li>量化了一个问题的复杂程度</li><li>对同一问题，不同算法的为什么表现不同</li></ul><h3 class=""><strong>基本术语</strong></h3><p>先通过一张图了解一般的机器学习流程：</p><p><img src="data:image/png;base64,undefine"></p><p><strong>实际分布<span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="script">D</mi></mrow></mrow><annotation encoding="application/x-tex"> \mathcal{D} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">D</span></span></span></span></span></span> (Distributions)</strong></p><blockquote><p>数据的实际分布，可理解为全部数据(包括未观察到的)的集合</p></blockquote><p><strong>目标函数(Unknown target function)</strong></p><blockquote><p>通常以 <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi>f</mi><mo>:</mo><mi mathvariant="script">X</mi><mo>→</mo><mi mathvariant="script">Y</mi></mrow></mrow><annotation encoding="application/x-tex"> \mathcal{f: X \to Y} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathcal" style="margin-right:0.14643em;">X</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathcal" style="margin-right:0.08222em;">Y</span></span></span></span></span></span> 表示产生实际分布的函数，对学习器来说是未知的</p></blockquote><p><strong>数据样本</strong></p><blockquote><p>学习器的输入</p></blockquote><p><strong>学习器(Learner)</strong></p><blockquote><p>当前语境下是机器学习算法，对输入数据进行学习，并输出一系列假设去逼近目标函数</p></blockquote><p><strong><a class="tc-tiddlylink tc-tiddlylink-missing" href="%25E5%2581%2587%25E8%25AE%25BE%25E7%25A9%25BA%25E9%2597%25B4%25E4%25B8%258E%25E7%2589%2588%25E6%259C%25AC%25E7%25A9%25BA%25E9%2597%25B4.html">假设空间与版本空间</a></strong></p><p>在了解以上基本概念后，主要需要理解以下两大概念：</p><p><strong><a class="tc-tiddlylink tc-tiddlylink-missing" href="PAC.html">PAC</a></strong></p><p><strong><a class="tc-tiddlylink tc-tiddlylink-missing" href="VC%25E7%25BB%25B4.html">VC维</a></strong></p><p><strong>Rademacher</strong></p><p><strong>稳定性</strong></p><p>Ref.</p><blockquote class="tc-quote"><p><a class="tc-tiddlylink-external" href="https://machinelearningmastery.com/basic-concepts-in-machine-learning/" rel="noopener noreferrer" target="_blank">https://machinelearningmastery.com/basic-concepts-in-machine-learning/</a></p><p>《机器学习》Chap.12 –周志华</p><p>《深入理解机器学习–从原理到算法》– Shai Shalev</p><p><a class="tc-tiddlylink-external" href="https://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/" rel="noopener noreferrer" target="_blank">https://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/</a></p><p><a class="tc-tiddlylink-external" href="http://beader.me/mlnotebook/section2" rel="noopener noreferrer" target="_blank">《机器学习基石》笔记</a></p><p><a class="tc-tiddlylink-external" href="https://blog.csdn.net/sun7_she/article/details/51163128" rel="noopener noreferrer" target="_blank">https://blog.csdn.net/sun7_she/article/details/51163128</a></p><p><a class="tc-tiddlylink-external" href="https://classroom.udacity.com/courses/ud262/lessons/383498973/concepts/3972686820923" rel="noopener noreferrer" target="_blank">Lesson 8, Udacity. ud262</a></p></blockquote></div>
+
+
+</div>
+
+</p>
+
+</section>
+</body>
+</html>
