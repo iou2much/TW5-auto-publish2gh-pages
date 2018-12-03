@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.17" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Tree Models: Notes of Machine Learning — to organize myself a systematic knowledge graph of ML</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river">
+
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-supervised " data-tags="supervised" data-tiddler-title="Tree Models"><div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
+</span>
+
+<span>
+
+<span class="tc-tiddler-title-icon" style="fill:;">
+
+</span>
+
+
+
+<h2 class="tc-title">
+Tree Models
+</h2>
+
+</span>
+
+</div>
+
+<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
+</div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="user.html">
+user
+</a> 17th July 2018 at 2:22am
+</div>
+</div>
+<div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ supervised
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+</div>
+</div>
+<div class="tc-tiddler-body tc-reveal"><h1 class="">本质：</h1><p>是一种贪心算法。会遍历数据构造出一棵树，这棵树上内部节点使用if-else判断数据特征，递归地把数据分到子分枝上，当一个节点满足了某种条件停止分枝时，它就成为了叶子节点，并赋值为某个数据的label。整棵树生长的过程中满足<strong>约束</strong>：分到子节点上的数据尽量<strong><em>纯</em></strong>。</p><p>一个完整的决策树学习算法包含有三大步骤，分别为：</p><ol><li>分裂点特征的选择；</li><li>决策树的生成；</li><li>决策树的剪枝。</li></ol><h1 class="">Impurity</h1><p>homogeneity vs heterogeneity</p><p>这里的纯是如何度量呢？有三种方式度量：
+* 熵不纯度
+* Gini不纯度 (计算量更低，不需要算log)
+* 类不纯度</p><p>熵(Entropy)</p><p><span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>(</mo><mi>D</mi><mo>)</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><mo>−</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>p</mi><mi>i</mi></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo>(</mo><msub><mi>p</mi><mi>i</mi></msub><mo>)</mo></mstyle></mrow><annotation encoding="application/x-tex"> E(D) = \displaystyle-\sum_{i}p_ilog_2(p_i) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0500050000000003em;"></span><span class="strut bottom" style="height:2.327674em;vertical-align:-1.277669em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">−</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0500050000000003em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mclose">)</span></span></span></span></span>
+<img src="data:image/png;base64,undefine"></p><p><img src="data:image/png;base64,undefine"></p><p>ref: <a class="tc-tiddlylink-external" href="http://people.revoledu.com/kardi/tutorial/DecisionTree/how-to-measure-impurity.htm" rel="noopener noreferrer" target="_blank">http://people.revoledu.com/kardi/tutorial/DecisionTree/how-to-measure-impurity.htm</a></p><p>叶子节点值的设定</p><p>属性缺失问题</p><p>过拟</p><p>决策树可以是一棵二叉或多叉树，它对数据的属性进行判断，得到分类或回归结果。预测时，在树的内部节点处用某一属性值（特征向量的某一分量）进行判断，根据判断结果决定进入哪个分支节点，直到到达叶子节点处，得到分类或回归结果。这是一种基于if-then-else规则的有监督学习算法，决策树的这些规则通过训练得到，而不是人工制定的。</p><p>分类树对应的映射函数是多维空间的分段线性划分，即用平行于各个坐标轴的超平面对空间进行切分；回归树的映射函数是分段常数函数。决策树是分段线性函数但不是线性函数，它具有非线性建模的能力。只要划分的足够细，分段常数函数可以逼近闭区间上任意函数到任意指定精度，因此决策树在理论上可以对任意复杂度的数据进行分类或者回归。对于分类问题，如果决策树深度够大，它可以将训练样本集的所有样本正确分类。但如果特征向量的维数过高，可能会遇到维数灾难导致准确率下降。</p><p>Key points in Tree Model:</p><ul><li><ul><li>判别模型</li><li>支持多分类</li></ul></li></ul><h1 class="">pros &amp; cons:</h1><ul><li>pros:<ul><li>解释性强</li></ul></li><li>cons:</li></ul><h1 class="">构建最优树(NP难)</h1><p><img src="data:image/gif;base64,undefine"></p><ul><li>类型<ul><li></li></ul></li><li>如何分裂 (度量特征的贡献)<ul><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="CART.html">CART</a> (<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Gini.html">Gini</a>) 二叉</li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="ID3.html">ID3</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="C4.5.html">C4.5</a></li></ul></li><li>剪枝(<a class="tc-tiddlylink tc-tiddlylink-missing" href="pruning.html">pruning</a>)</li><li></li></ul><p>Ref.</p><blockquote class="tc-quote"><p><a class="tc-tiddlylink-external" href="https://medium.com/deep-math-machine-learning-ai/chapter-4-decision-trees-algorithms-b93975f7a1f1" rel="noopener noreferrer" target="_blank">https://medium.com/deep-math-machine-learning-ai/chapter-4-decision-trees-algorithms-b93975f7a1f1</a></p><p>《数据挖掘导论》Chap. 4 – Pang-Ning Tan</p><ul><li>李宏毅老师</li></ul></blockquote></div>
+
+
+</div>
+
+</p>
+
+</section>
+</body>
+</html>

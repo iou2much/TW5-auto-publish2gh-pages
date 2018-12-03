@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.17" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>1.1.1 假设空间与版本空间: Notes of Machine Learning — to organize myself a systematic knowledge graph of ML</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river">
+
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-1.1-Computational%20learning%20theory tc-tagged-todo " data-tags="[[1.1-Computational learning theory]] todo" data-tiddler-title="1.1.1 假设空间与版本空间"><div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
+</span>
+
+<span>
+
+<span class="tc-tiddler-title-icon" style="fill:;">
+
+</span>
+
+
+
+<h2 class="tc-title">
+1.1.1 假设空间与版本空间
+</h2>
+
+</span>
+
+</div>
+
+<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
+</div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="user.html">
+user
+</a> 2nd November 2018 at 12:56pm
+</div>
+</div>
+<div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ 1.1-Computational learning theory
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+<span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ todo
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+</div>
+</div>
+<div class="tc-tiddler-body tc-reveal"><h3 class=""><strong>TL;DR</strong></h3><blockquote><p>对目标函数提出可能假设的集合称为<strong>假设空间</strong>，在假设空间中，与观察到的数据一致的子集为<strong>版本空间</strong></p></blockquote><h3 class=""><strong>prerequisite</strong></h3><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="%25E7%25B1%25BB.html">类</a></p><p>本文讨论基于以下几点前提：</p><ul><li>监督学习问题</li><li>属性为离散数据, 且在有限类中取值</li><li>二分类问题</li></ul><p><strong>有限类</strong></p><blockquote><p>属性取值为有限集合</p></blockquote><p><strong>假设空间</strong></p><blockquote><p>学习器的输出，学习器通过训练数据得出一系列假设(hypothesis), <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>h</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>h</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>h</mi><mn>3</mn></msub><mo>∈</mo><mrow><mi mathvariant="script">H</mi></mrow></mrow><annotation encoding="application/x-tex"> h_1 , h_2 , h_3 \in \mathcal{H} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord"><span class="mord mathit">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.00965em;">H</span></span></span></span></span></span>, 以逼近目标函数。</p><p>假设空间通常以<span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="script">H</mi></mrow></mrow><annotation encoding="application/x-tex"> \mathcal{H} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord mathcal" style="margin-right:0.00965em;">H</span></span></span></span></span></span>表示为假设的集合。</p></blockquote><p>假设空间规模计算:(可理解为集合的势)</p><p>假设有以下数据，4个属性，每个属性取值, <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><mo>{</mo><mn mathvariant="script">0</mn><mo separator="true">,</mo><mn mathvariant="script">1</mn><mo>}</mo></mrow></mrow><annotation encoding="application/x-tex"> \mathcal{x_n \in \{0,1\}} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mopen">{</span><span class="mord mathcal">0</span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathcal">1</span><span class="mclose">}</span></span></span></span></span></span></p><table><tbody><tr class="evenRow"><td align="center">x1</td><td align="center">x2</td><td align="center">x3</td><td align="center">x4</td><td align="center">y</td></tr><tr class="oddRow"><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr class="evenRow"><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr class="oddRow"><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr class="evenRow"><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr></tbody></table><p>输入空间为 <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>4</mn></msup></mrow><annotation encoding="application/x-tex"> 2^4 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span></span></p><p>假设空间为 <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><msup><mn>2</mn><mn>4</mn></msup></msup><mo>=</mo><mn>6</mn><mn>5</mn><mn>5</mn><mn>3</mn><mn>6</mn></mrow><annotation encoding="application/x-tex"> 2^{2^4} = 65536 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.9869199999999999em;"></span><span class="strut bottom" style="height:0.9869199999999999em;vertical-align:0em;"></span><span class="base"><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9869199999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913142857142857em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">6</span><span class="mord">5</span><span class="mord">5</span><span class="mord">3</span><span class="mord">6</span></span></span></span></span></p><p>if we have the given image above we can then figure it out the following way.</p><p>Count the number of attributes or features. In this case, we have four features or (4).
+Analyze or if given what are the values corresponding to each feature (e.g. binary, or many different inputs). In this particular case, we have binary values (0/1).</p><p>Hence, 2^4 = 16. 
+So for each of the 2^4 attributes, the outputs can take 0 or 1.</p><p>Therefore, 2^(2^4) = 65536 ways. </p><h3 class="">Ref.</h3><blockquote class="tc-quote"><p><a class="tc-tiddlylink-external" href="https://www.quora.com/What-is-hypothesis-in-machine-learning" rel="noopener noreferrer" target="_blank">https://www.quora.com/What-is-hypothesis-in-machine-learning</a></p><p><a class="tc-tiddlylink-external" href="https://www.cnblogs.com/HongjianChen/p/8383816.html" rel="noopener noreferrer" target="_blank">https://www.cnblogs.com/HongjianChen/p/8383816.html</a></p><p><a class="tc-tiddlylink-external" href="https://stats.stackexchange.com/questions/183989/what-exactly-is-a-hypothesis-space-in-the-context-of-machine-learning" rel="noopener noreferrer" target="_blank">What exactly is a hypothesis space in the context of Machine Learning?</a></p><p><a class="tc-tiddlylink-external" href="https://www.quora.com/What-does-the-hypothesis-space-mean-in-Machine-Learning" rel="noopener noreferrer" target="_blank">What does the hypothesis space mean in Machine Learning?</a></p><p><a class="tc-tiddlylink-external" href="http://www.ccs.neu.edu/home/rjw/csg220/lectures/intro.pdf" rel="noopener noreferrer" target="_blank">http://www.ccs.neu.edu/home/rjw/csg220/lectures/intro.pdf</a></p><p><a class="tc-tiddlylink-external" href="https://stats.stackexchange.com/questions/226369/what-is-an-input-space-and-why-does-the-fraction-of-the-input-space-covered-by" rel="noopener noreferrer" target="_blank">What is an 'input space' and why does the fraction of the input space covered by the training set matter?</a></p><p><a class="tc-tiddlylink-external" href="https://stats.stackexchange.com/questions/319311/are-the-terms-hypothesis-space-and-parameter-space-interchangeable" rel="noopener noreferrer" target="_blank">https://stats.stackexchange.com/questions/319311/are-the-terms-hypothesis-space-and-parameter-space-interchangeable</a></p></blockquote></div>
+
+
+</div>
+
+</p>
+
+</section>
+</body>
+</html>
